@@ -1,7 +1,8 @@
-$languages: zh-CN, en;
+$languages: zh-CN, zh-TW, en;
 
 html[lang] {
   .markdown-body {
+
     h1[lang],
     h2[lang],
     h3[lang],
@@ -25,8 +26,10 @@ html[lang] {
 
 @each $lang in $languages {
   html[lang="#{$lang}"] {
+
     // for markdown
     .markdown-body {
+
       h1[lang="#{$lang}"],
       h2[lang="#{$lang}"],
       h3[lang="#{$lang}"],
@@ -41,7 +44,7 @@ html[lang] {
 
     .va-toc {
       li[lang="#{$lang}"] {
-        > a {
+        >a {
           display: block;
         }
       }

@@ -3,13 +3,15 @@ import type { ThemeConfig } from 'valaxy-theme-yun'
 
 // import { VitePWA } from 'vite-plugin-pwa'
 import Inspect from 'vite-plugin-inspect'
-import { addonAlgolia } from 'valaxy-addon-algolia'
+
+// import { addonAlgolia } from 'valaxy-addon-algolia'
 
 // import { addonTwikoo } from 'valaxy-addon-twikoo'
 import { addonWaline } from 'valaxy-addon-waline'
 import { addonComponents } from 'valaxy-addon-components'
 import { addonLightGallery } from 'valaxy-addon-lightgallery'
-import { addonTwikoo } from 'valaxy-addon-twikoo'
+
+// import { addonTwikoo } from 'valaxy-addon-twikoo'
 
 const safelist = [
   'i-ri-home-line',
@@ -54,7 +56,7 @@ export default defineValaxyConfig<ThemeConfig>({
     footer: {
       since: 2016,
       beian: {
-        enable: true,
+        enable: false,
         icp: '苏ICP备17038157号',
       },
       icon: {
@@ -101,20 +103,20 @@ export default defineValaxyConfig<ThemeConfig>({
   },
 
   addons: [
-    addonAlgolia({
-      appId: 'UVMHTMG1T5',
-      apiKey: '805f2584a8866388aa1631ff0348ddae',
-      indexName: 'valaxy',
-    }),
+    // addonAlgolia({
+    //   appId: 'UVMHTMG1T5',
+    //   apiKey: '805f2584a8866388aa1631ff0348ddae',
+    //   indexName: 'valaxy',
+    // }),
     addonComponents(),
     addonWaline({
-      serverURL: 'https://waline.yunyoujun.cn',
+      serverURL: 'https://shokax-waline.vercel.app/',
       pageview: true,
       comment: true,
     }),
     addonLightGallery(),
-    addonTwikoo({
-      envId: 'https://twikoo.vercel.app',
-    }),
+    // addonTwikoo({
+    //   envId: 'https://twikoo.vercel.app',
+    // }),
   ],
 })

@@ -50,9 +50,9 @@ function generateStyles(roots: string[], options: ResolvedValaxyOptions) {
 
 function generateLocales(roots: string[]) {
   const imports: string[] = [
-    'const messages = { "zh-CN": {}, en: {} }',
+    'const messages = { "zh-CN": {}, "zh-TW": {}, en: {} }',
   ]
-  const languages = ['zh-CN', 'en']
+  const languages = ['zh-CN', 'zh-TW', 'en']
 
   roots.forEach((root, i) => {
     languages.forEach((lang) => {

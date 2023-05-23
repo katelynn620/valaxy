@@ -1,9 +1,9 @@
 import { defineSiteConfig } from 'valaxy'
 
 export default defineSiteConfig({
-  lang: 'zh-CN',
+  lang: 'zh-TW',
   title: 'Valaxy Theme Yun',
-  url: 'https://yun.valaxy.site/',
+  url: 'https://valaxy-test.vercel.app/',
   author: {
     avatar: 'https://www.yunyoujun.cn/images/avatar.jpg',
     name: '云游君',
@@ -92,8 +92,8 @@ export default defineSiteConfig({
 
   search: {
     enable: true,
-    type: 'algolia',
-    // type: 'fuse',
+    // type: 'algolia',
+    type: 'fuse',
   },
 
   comment: {
@@ -107,7 +107,7 @@ export default defineSiteConfig({
   },
 
   sponsor: {
-    enable: true,
+    enable: false,
     methods: [
       {
         name: '支付宝',
